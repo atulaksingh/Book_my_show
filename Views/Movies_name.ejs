@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/css/Movies_name.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+  <%- include('./partials/navbar'); %>
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="blackdiv" style="background-color:#171717;">
+          <div class="imgblur"><img src="unsplash.jpg" alt=""></div>
+          <div class="movies">
+
+            <div class="row">
+              <div class="col-md-4 mt-5">
+
+
+
+                <!-- <h1 class="text-light">hello</h1> -->
+                <div class="card" style="width: 18rem; margin: auto;">
+                  <img src=" <%=reqmoviedata.movie_img%>" class="card-img-top" alt="..."
+                    style="height: 27rem; border-radius: 30px; ">
+
+                </div>
+                <br>
+              </div>
+              <div class="col-md-8 text-light " style="margin-top:8rem;">
+                <!-- <h1 class="text-light mt-5">hello</h1> -->
+                <h1>
+                  <%=reqmoviedata.movie_name%>
+                </h1>
+
+                <h4> Languages: </h4>
+                <div class="abcd">
+                  <h5 class=" bg-light text-dark" style="width: fit-content;padding: 2px; margin: 8px;">
+                    <%=reqmoviedata.movie_animation%>
+                  </h5>
+                  <h5 class=" bg-light text-dark" style="width: fit-content;padding: 2px; margin: 8px;">
+                    <%=reqmoviedata. movie_language%>
+                  </h5>
+                </div>
+                <h5>
+                  <%=reqmoviedata.movie_hour%>
+                    <span class="sc-2k6tnd-5 kvkTzz"> • </span>
+                    <%=reqmoviedata.movie_types%>
+                      <span class="sc-2k6tnd-5 kvkTzz"> • </span>
+                      <%=reqmoviedata.movie_coun_name%>
+                        <span class="sc-2k6tnd-5 kvkTzz"> • </span>
+                        <%=reqmoviedata.movie_date%>
+                </h5><br>
+                <a href="#">
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    style="background-color:#be185d ; padding: 1rem; width: 25%;">Book tickets</button>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="moviesDesc mt-4">
+          <h4>About the movies</h4>
+
+          <span class="fw-normal">
+            <p>
+              <%=reqmoviedata.Movie_about%>
+            </p>
+          </span>
+
+        </div>
+      </div>
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="/bookticket" method="post">
+            <div class="modal-header">
+
+              <h5 class="modal-title" id="exampleModalLabel">Select the Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body" style="background-color: #f7fee7;">
+              <div>
+                <h6><label for="start"> Select movie bookings date: </label></h6>
+
+                <input type="date" id="Showsdate" name="movie_booking_date" value="2022-07-13" min="2022-07-11"
+                  max="2022-07-16">
+
+              </div><br>
+              <div>
+                <!-- <label for="start"> Select your Language </label> -->
+                <div class="animation-list">
+
+                  <div id="language-value">
+                    <h6><label for="start"> Select movie Language: </label></h6>
+                    <label><input name="language" id="r1" value="English" type="radio"
+                        class="input-radio">English</label>
+                    <label><input name="language" id="r1" value="Hindi" type="radio" class="input-radio">Hindi</label>
+
+
+                  </div>
+                  <br>
+                  <div id="animation-value">
+
+                    <label><input name="animaton" value="4K" type="radio" class="input-checkbox">4K</label>
+                    <label><input name="animaton" value="3D" type="radio" class="input-checkbox">3D</label>
+                    <label><input name="animaton" value="2D" type="radio" class="input-checkbox">2D</label>
+                  </div>
+                  <input type="hidden" id="movieid" name="movieid" value="<%=reqmoviedata._id%>">
+                  <input type="hidden" id="moviename" name="moviename" value="<%=reqmoviedata.movie_name%>">
+                </div>
+              </div>
+            </div>
+
+            <div class=" modal-footer">
+
+              <a href="/bookticket">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////////// -->
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+
+    <%- include('./partials/footer'); %>
+</body>
+<script>
+
+
+</script>
+
+</html>

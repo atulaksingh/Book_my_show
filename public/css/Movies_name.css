@@ -1,0 +1,120 @@
+.btn btn-dark{
+  background-color: #be185d;
+    width: 25%;
+    padding: 1rem;
+
+}
+.abcd{
+display: flex;
+flex-wrap: wrap;
+}
+/* .blackdiv{
+  background-image: url(../image/abcd.jpg);
+} */
+.iQoMfg {
+  font-family: inherit;
+  width: 100%;
+  outline: 0px;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  padding: 4px 0px 8px;
+  background: transparent;
+  transition: border-color 0.2s ease 0s;
+  border-width: 0px 0px 1px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-left-style: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-left-color: initial;
+  border-image: initial;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(204, 204, 204);
+  border-radius: 0px;
+}
+.maindiv{
+  width: 100%;
+  height: 70vh;
+  /* position: relative; */
+}
+.box{
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 50px;
+  background: rgb(0,0,0 ,0.8);
+  border-radius: 10px;
+}
+h3{
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+.box .inputBox{
+  position: relative;
+}
+#userbox{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  
+
+}
+#passlable{
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.5s;
+
+}
+input:focus ~label{
+  top: -20px;
+  left: 0px;
+  color: #03a9f4;
+
+}
+#passlable:valid ~label{
+  top: -20px;
+  left: 0px;
+  color: #03a9f4;
+  
+}
+#submit{
+background: transparent;
+border: none;
+outline: none;
+color: #fff;
+background: #03a9f4;
+padding: 8px 16px;
+border-radius:5px ;
+font-size: 14px;
+margin-left: 3rem;
+}
+
+.kvkTzz {
+  padding: 0px 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+#animationbutton{
+  margin: 1rem;
+  width: 13%;
+  padding: 4px;
+  border-radius: 25px;
+}
